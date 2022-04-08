@@ -6,7 +6,7 @@
 
 `composer require zvn/tool:dev-master`
 
-```
+```sourcegraph
 // 带网络请求的方法需要配置config.php
 // 引入
 use Zvn\Tool\Tool;
@@ -20,7 +20,7 @@ class 方法{
 
 
 *  目前支持的不带网络请求方法
-```
+``` sourcegraph
 $Tool->createBase64Ewm() // 创建base64未二维码
 $Tool->create_order() 	// 创建一个订单
 $Tool->IntToFloat()    // 将分转换成元
@@ -31,7 +31,7 @@ $Tool->is_ip() 		  //验证不带端口IPV4
 $Tool->is_sum 		 // 验证金额
 ```
 * 目前支持的带网络的请求的方法
-``` 
+``` sourcegraph
 $HttpTool->SendSms()      // 塞邮发送短信验证码 
 $HttpTool->getIpSite()   // 获取IP的城市 
 $HttpTool->getIpWeather // 获取IP的城市天气 
