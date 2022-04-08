@@ -5,7 +5,6 @@ namespace Zvn\Tool\HttpTool;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Zvn\Tool\Exception\HttpException;
-use Zvn\Tool\Exception\InvalidException;
 use Zvn\Tool\Statics\Statics;
 
 class HttpTool
@@ -17,7 +16,7 @@ class HttpTool
     public function __construct()
     {
         $this->Client = new Client();
-        $this->config = require_once(dirname(__DIR__) . '\config\config.php');
+        $this->config = require_once(dirname(__DIR__) . '\Config\config.php');
     }
 
     /**
