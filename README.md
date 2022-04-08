@@ -4,6 +4,8 @@
 ---------
 *  初始化使用方法
 
+`composer require zvn/tool:dev-master`
+
 ```
 // 带网络请求的方法需要配置config.php
 // 引入
