@@ -2,9 +2,6 @@
 
 namespace Zvn\Tool\Statics;
 
-use CodeItNow\BarcodeBundle\Utils\QrCode;
-use Exception;
-use Zvn\Tool\Exception\HttpException;
 use Zvn\Tool\Exception\InvalidException;
 
 class Statics
@@ -15,33 +12,6 @@ class Statics
 
     }
 
-
-    /**
-     * 创建base64未二维码
-     * @param $data
-     * @return string
-     * @throws InvalidException|HttpException
-     */
-    public function createBase64Ewm($data): string
-    {
-        if (!is_string($data)) {
-            throw new InvalidException('请输入字符串', 500);
-        }
-        $qrCode = new QrCode();
-        try {
-            $base64 = $qrCode->setText($data)
-                ->setSize(250)
-                ->setPadding(10)
-                ->setErrorCorrection('high')
-                ->setForegroundColor(array('r' => 0, 'g' => 0, 'b' => 0, 'a' => 0))
-                ->setBackgroundColor(array('r' => 255, 'g' => 255, 'b' => 255, 'a' => 0))
-                ->setLabelFontSize(16)
-                ->setImageType(QrCode::IMAGE_TYPE_PNG);
-        } catch (Exception $e) {
-            throw new HttpException($e->getMessage(), $e->getCode(), $e);
-        }
-        return 'data:' . $qrCode->getContentType() . ';base64,' . $base64->generate();
-    }
 
     /**
      * 创建唯一订单
