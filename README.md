@@ -21,7 +21,6 @@ class 方法{
 
 *  目前支持的不带网络请求方法
 ```php
-$Tool->createBase64Ewm() // 创建base64未二维码
 $Tool->create_order() 	// 创建一个订单
 $Tool->IntToFloat()    // 将分转换成元
 $Tool->loatToInt()    // 将元转换成分
