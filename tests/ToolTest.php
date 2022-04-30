@@ -1,7 +1,6 @@
 <?php
 namespace Zvn\Tool\Tests;
 
-use GuzzleHttp\Exception\GuzzleException;
 use PHPUnit\Framework\TestCase;
 use Zvn\Tool\Tool;
 
