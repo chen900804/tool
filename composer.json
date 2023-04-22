@@ -1,21 +1,24 @@
 {
-    "name": "zvn/tools",
-    "description": "零时差网络专用工具包",
-    "type": "library",
-    "require": {
-        "php": ">=8.0.2"
-    },
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Zvn\\Tools\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "零时差",
-            "email": "admin@zvn.cc"
-        }
-    ],
-    "minimum-stability": "dev"
+  "name": "zvn/tools",
+  "description": "零时差网络专用工具包",
+  "type": "library",
+  "require": {
+    "php": ">=8.0.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.1"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Zvn\\Tools\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "零时差",
+      "email": "admin@zvn.cc"
+    }
+  ],
+  "minimum-stability": "dev"
 }
